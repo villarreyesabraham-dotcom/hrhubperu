@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="es"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;The HR Hub Perú&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>*{margin:0;padding:0;box-sizing:border-box}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--c1:#1a1a2e;--c2:#16213e;--c3:#0f3460;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--acc:#e94560;--acc2:#f5a623;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--light:#f8f9fa;--muted:#6c757d;--white:#fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--r:12px;--r2:8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--c1);color:var(--white);line-height:1.6;overflow-x:hidden}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;background:rgba(26,26,46,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.07)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.logo{font-size:1.1rem;font-weight:700;letter-spacing:.5px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.logo span{color:var(--acc)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links{display:flex;gap:2rem;list-style:none}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:.88rem;letter-spacing:.3px;transition:color .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-links a:hover{color:var(--white)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-cta{background:var(--acc);color:var(--white);padding:.45rem 1.2rem;border-radius:var(--r2);font-size:.85rem;font-weight:600;text-decoration:none;transition:opacity .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.nav-cta:hover{opacity:.85}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>section{padding:5rem 2rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.container{max-width:1100px;margin:0 auto}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero{min-height:100vh;display:flex;align-items:center;padding-top:5rem;background:var(--c1);position:relative;overflow:hidden}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(233,69,96,.15) 0%,transparent 70%);pointer-events:none}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero::after{content:'';position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(15,52,96,.5) 0%,transparent 70%);pointer-events:none}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-tag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(233,69,96,.12);border:1px solid rgba(233,69,96,.3);color:var(--acc);padding:.35rem .9rem;border-radius:2rem;font-size:.78rem;font-weight:600;letter-spacing:.5px;margin-bottom:1.5rem;text-transform:uppercase}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero h1{font-size:3rem;font-weight:800;line-height:1.15;margin-bottom:1.25rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero h1 em{font-style:normal;color:var(--acc)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero p{font-size:1.05rem;color:rgba(255,255,255,0.65);margin-bottom:2rem;max-width:480px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-primary{background:var(--acc);color:var(--white);padding:.75rem 1.75rem;border-radius:var(--r2);font-weight:700;font-size:.92rem;text-decoration:none;transition:transform .2s,opacity .2s;display:inline-block}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-primary:hover{transform:translateY(-2px);opacity:.9}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-secondary{border:1.5px solid rgba(255,255,255,.25);color:var(--white);padding:.75rem 1.75rem;border-radius:var(--r2);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .2s;display:inline-block}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-secondary:hover{border-color:var(--white);background:rgba(255,255,255,.05)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-stats{display:flex;gap:2rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stat-item .num{font-size:1.8rem;font-weight:800;color:var(--acc)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stat-item .lbl{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.3}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:2rem;position:relative}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-card::before{content:'';position:absolute;inset:0;border-radius:var(--r);background:linear-gradient(135deg,rgba(233,69,96,.07) 0%,transparent 60%);pointer-events:none}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.profile-row{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.avatar{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;flex-shrink:0}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.profile-info .name{font-weight:700;font-size:1rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.profile-info .role{font-size:.8rem;color:rgba(255,255,255,.5)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge{background:rgba(233,69,96,.12);border:1px solid rgba(233,69,96,.25);color:rgba(255,255,255,.85);padding:.3rem .75rem;border-radius:2rem;font-size:.75rem;font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.metric{background:rgba(255,255,255,.05);border-radius:var(--r2);padding:.9rem 1rem;border:1px solid rgba(255,255,255,.07)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.metric .m-val{font-size:1.4rem;font-weight:800;color:var(--white)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.metric .m-lbl{font-size:.73rem;color:rgba(255,255,255,.45);margin-top:.1rem}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:2rem;transition:all .3s;cursor:default;position:relative;overflow:hidden}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--acc);transform:scaleX(0);transition:transform .3s;transform-origin:left}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-card:hover{border-color:rgba(233,69,96,.3);transform:translateY(-4px)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-card:hover::after{transform:scaleX(1)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-icon{width:44px;height:44px;border-radius:var(--r2);background:rgba(233,69,96,.12);border:1px solid rgba(233,69,96,.2);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;font-size:1.2rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-card h3{font-size:1.1rem;font-weight:700;margin-bottom:.6rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-card p{font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.6}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.service-tag{display:inline-block;background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.25);color:var(--acc2);padding:.25rem .7rem;border-radius:2rem;font-size:.73rem;font-weight:600;margin-top:1rem}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-label{font-size:.75rem;font-weight:700;color:var(--acc);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.75rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-title{font-size:2.2rem;font-weight:800;line-height:1.2;margin-bottom:1rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-sub{font-size:1rem;color:rgba(255,255,255,.5);max-width:580px}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.method-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:3rem;position:relative}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.method-steps::before{content:'';position:absolute;top:28px;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(233,69,96,.4),transparent)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.step{text-align:center;padding:1.5rem 1rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.step-num{width:56px;height:56px;border-radius:50%;background:rgba(233,69,96,.1);border:2px solid rgba(233,69,96,.3);display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;color:var(--acc);margin:0 auto 1rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.step h4{font-size:.95rem;font-weight:700;margin-bottom:.4rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.step p{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.5}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pillar{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:var(--r);padding:1.5rem;transition:background .2s}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pillar:hover{background:rgba(255,255,255,.06)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pillar-icon{font-size:1.4rem;margin-bottom:.75rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pillar h4{font-size:.95rem;font-weight:700;margin-bottom:.4rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pillar p{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.5}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:1.75rem;position:relative}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi::before{content:'"';position:absolute;top:-10px;left:1.5rem;font-size:5rem;color:var(--acc);opacity:.2;line-height:1;font-family:serif}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi p{font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.65;margin-bottom:1.25rem;position:relative;z-index:1}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi-author{display:flex;align-items:center;gap:.75rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem;flex-shrink:0}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi-name{font-size:.85rem;font-weight:700}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi-role{font-size:.75rem;color:rgba(255,255,255,.4)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.testi-badge{display:inline-block;background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);color:#10b981;padding:.2rem .6rem;border-radius:2rem;font-size:.72rem;font-weight:700;margin-top:.4rem}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cta-section{background:rgba(233,69,96,.07);border:1px solid rgba(233,69,96,.15);border-radius:var(--r);padding:4rem;text-align:center;margin-top:2rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cta-section h2{font-size:2rem;font-weight:800;margin-bottom:1rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cta-section p{color:rgba(255,255,255,.6);margin-bottom:2rem;font-size:1rem}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cta-btns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.footer{padding:2rem;border-top:1px solid rgba(255,255,255,.07);text-align:center}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.footer p{font-size:.8rem;color:rgba(255,255,255,.3)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.footer a{color:rgba(255,255,255,.4);text-decoration:none}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.divider{height:1px;background:rgba(255,255,255,.06);margin:0 2rem}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-inner&gt;*{animation:fadeUp .6s ease both}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-inner&gt;*:nth-child(2){animation-delay:.15s}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="logo"&gt;THE &lt;span&gt;HR&lt;/span&gt; HUB PERÚ&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#"&gt;Personas&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#"&gt;Empresas&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#"&gt;Curso Online&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;a href="#" class="nav-cta"&gt;Reservar Asesoría&lt;/a&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HERO --&gt;</p>
+<p class="p1">&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-tag"&gt;🇵🇪 &amp;nbsp;#1 en empleabilidad · Perú &amp; LatAm&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Tu próximo empleo empieza con una &lt;em&gt;estrategia real&lt;/em&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Asesorías 1:1 y formación experta para profesionales de 20 a 45 años. CV, LinkedIn y entrevistas con resultados concretos.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-btns"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" class="btn-primary"&gt;Quiero mi asesoría →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#" class="btn-secondary"&gt;Ver curso online&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-stats"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stat-item"&gt;&lt;div class="num"&gt;+80K&lt;/div&gt;&lt;div class="lbl"&gt;Comunidad en&lt;br&gt;redes sociales&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stat-item"&gt;&lt;div class="num"&gt;97%&lt;/div&gt;&lt;div class="lbl"&gt;Tasa de&lt;br&gt;satisfacción&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="stat-item"&gt;&lt;div class="num"&gt;28 días&lt;/div&gt;&lt;div class="lbl"&gt;Tiempo promedio&lt;br&gt;de transición&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="profile-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="avatar"&gt;PW&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="profile-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="name"&gt;Paloma Walker&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="role"&gt;Fundadora · Especialista en Empleabilidad&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="badge-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;CV Optimizado&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;LinkedIn Audit&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;Entrevistas&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="badge"&gt;Headhunting&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="metric-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="metric"&gt;&lt;div class="m-val"&gt;500+&lt;/div&gt;&lt;div class="m-lbl"&gt;Profesionales asesorados&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="metric"&gt;&lt;div class="m-val"&gt;4+ años&lt;/div&gt;&lt;div class="m-lbl"&gt;Experiencia en HR&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="metric"&gt;&lt;div class="m-val"&gt;Psicóloga&lt;/div&gt;&lt;div class="m-lbl"&gt;Distinción académica&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="metric"&gt;&lt;div class="m-val"&gt;Pacífico&lt;/div&gt;&lt;div class="m-lbl"&gt;Business School&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- SERVICIOS --&gt;</p>
+<p class="p1">&lt;section style="background:var(--c1)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-label"&gt;Servicios&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;Programas diseñados para ganar&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="section-sub"&gt;Tanto si eres un profesional que quiere su próximo empleo, como si eres una empresa que necesita formar a su equipo.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="services-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="service-icon"&gt;👤&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Asesorías 1:1 · Personas&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Para profesionales que buscan su próximo empleo o una mejora de posición. Optimización de CV, LinkedIn y entrenamiento en entrevistas bajo estándares globales.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="service-tag"&gt;Para ti&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="service-icon"&gt;🏢&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Talleres · Empresas&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Entrenamientos enfocados en habilidades blandas, inteligencia emocional y comunicación asertiva. Programas a medida que incrementan la productividad y retención.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="service-tag"&gt;Para tu equipo&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="service-icon"&gt;🎓&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Curso Online de Empleabilidad&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Acceso a herramientas, plantillas y metodologías probadas para que puedas avanzar a tu ritmo y conquistar el mercado laboral desde cero.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="service-tag"&gt;A tu ritmo&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="service-icon"&gt;🌐&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Colaboraciones Corporativas&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Programas gratuitos como "Talento Imparable" con AFP Integra. Alianzas estratégicas para impulsar la empleabilidad de jóvenes profesionales en LatAm.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="service-tag"&gt;Impacto social&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- MÉTODO --&gt;</p>
+<p class="p1">&lt;section style="background:var(--c2)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="text-align:center;margin-bottom:.5rem"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="section-label"&gt;Método&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="section-title" style="max-width:500px;margin:0 auto"&gt;El Método Hub — 4 pasos hacia tu nuevo rol&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="method-steps"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-num"&gt;01&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Elegir paquete&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Selecciona la asesoría que mejor responda a tu momento profesional actual&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-num"&gt;02&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Reservar sesión&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Pago seguro y elige el horario que más te convenga en nuestro calendario&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-num"&gt;03&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Preparar tu perfil&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Completa el formulario previo para que Paloma analice tu perfil a fondo&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="step-num"&gt;04&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;Aplicar con soporte&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Ejecuta tu estrategia con acompañamiento hasta concretar tu contratación&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- PILARES --&gt;</p>
+<p class="p1">&lt;section style="background:var(--c1)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-label"&gt;Herramientas&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Todo lo que necesitas para destacar&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="pillars"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="pillar"&gt;&lt;div class="pillar-icon"&gt;📄&lt;/div&gt;&lt;h4&gt;CV de Alto Impacto (ATS)&lt;/h4&gt;&lt;p&gt;Currículum optimizado con keywords para superar filtros automáticos y captar a los reclutadores en segundos.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="pillar"&gt;&lt;div class="pillar-icon"&gt;💼&lt;/div&gt;&lt;h4&gt;LinkedIn Audit Premium&lt;/h4&gt;&lt;p&gt;Transforma tu perfil en una herramienta persuasiva que atrae oportunidades de forma pasiva.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="pillar"&gt;&lt;div class="pillar-icon"&gt;🎯&lt;/div&gt;&lt;h4&gt;Guía Maestra de Entrevistas&lt;/h4&gt;&lt;p&gt;Simulaciones y técnicas para responder con seguridad y negociar tu salario con éxito.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="pillar"&gt;&lt;div class="pillar-icon"&gt;🗺️&lt;/div&gt;&lt;h4&gt;Plan de Búsqueda Activa&lt;/h4&gt;&lt;p&gt;Estrategia personalizada para acceder al mercado oculto de vacantes por networking directo.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="pillar"&gt;&lt;div class="pillar-icon"&gt;🤝&lt;/div&gt;&lt;h4&gt;Networking Estratégico&lt;/h4&gt;&lt;p&gt;Metodología para conectar con tomadores de decisión y abrir puertas donde quieres trabajar.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="pillar"&gt;&lt;div class="pillar-icon"&gt;🔄&lt;/div&gt;&lt;h4&gt;Feedback Continuo&lt;/h4&gt;&lt;p&gt;Revisión de avances, ajustes de marca personal y soporte directo post-sesión.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- TESTIMONIOS --&gt;</p>
+<p class="p1">&lt;section style="background:var(--c2)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-label"&gt;Testimonios&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;Historias reales de transformación&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="testimonials"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="testi"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Su guía fue muy valiosa. Me brindó consejos prácticos y feedback claro que me ayudaron a fortalecer mi enfoque profesional. La recomiendo por su gran capacidad de orientar con empatía y precisión.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="testi-author"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="testi-avatar"&gt;ER&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-name"&gt;Eduardo R.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-role"&gt;Director Regional de Operaciones&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-badge"&gt;↑ 2 niveles en 2 meses&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="testi"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Tomé su servicio completo. Empezaron a ver mi CV en procesos de selección, me ayudó a prepararme para entrevistas y tuve más confianza. Es genuina, genera confianza y te acompaña post servicio.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="testi-author"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="testi-avatar" style="background:linear-gradient(135deg,#0f3460,#e94560)"&gt;SR&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-name"&gt;Sofía R.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-role"&gt;Senior Marketing Manager · Tech&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-badge"&gt;Transición en 28 días&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="testi"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Antes no sabía cómo comunicar mi valor. Con el LinkedIn Audit y el entrenamiento de entrevistas, en 3 semanas tenía dos ofertas sobre la mesa. Paloma sabe exactamente qué buscan los reclutadores.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="testi-author"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="testi-avatar" style="background:linear-gradient(135deg,#f5a623,#e94560)"&gt;EB&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-name"&gt;Elena B.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-role"&gt;Coordinadora de Talento Humano Senior&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="testi-badge"&gt;+40% de salario&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="divider"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- CTA FINAL --&gt;</p>
+<p class="p1">&lt;section style="background:var(--c1)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="cta-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-tag" style="margin:0 auto 1.5rem;width:fit-content"&gt;¿Listo para el cambio?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Empieza hoy tu transformación profesional&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Asesorías disponibles para profesionales en Perú y toda LatAm. Sesiones 100% online, en español.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cta-btns"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" class="btn-primary"&gt;Reservar mi asesoría 1:1 →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#" class="btn-secondary"&gt;Ver curso online&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;© 2025 The HR Hub Perú · &lt;a href="#"&gt;@thehub.pe&lt;/a&gt; · Todos los derechos reservados&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
